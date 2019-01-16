@@ -4,7 +4,9 @@ In this repo I explore various deep learning algorithms as applied to the 2-dime
 First, I generate and label a dataset of Ising model configurations by performing Monte Carlo simulations at various temperatures.
 These simulations are performed in ```Ising_genData.ipynb```.
 
-In ```Ising_NN.ipynb```, I explore how a neural net with a single hidden layer, and a convolutional neural net are able to classify the high and low temperature phases of the Ising model. These ideas are based off the paper: J. Carrasquilla, R. Melko, Nat. Phys. (2017).
+In ```Ising_NN.ipynb```, I explore how a neural net with a single hidden layer, and a convolutional neural net are able to classify the high and low temperature phases of the Ising model. I consider two different Ising system sizes (20x20 and 40x40) and examine how the performance of the models changes. These ideas are based off the paper: [J. Carrasquilla, R. Melko, Nat. Phys. (2017)][example].
+
+  [example]: https://www.nature.com/articles/nphys4035
 
 Next, In ```Ising_GAN.ipynb``` I create a GAN that generates configurations of the Ising model. Training is performed over the full temperature range sampled in the simulations.
 
